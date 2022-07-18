@@ -1,0 +1,73 @@
+body{
+    background-color: rgba(235, 239, 252, 0.212);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 1400px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 900px;
+}
+
+form>p{
+    font-weight: bold;
+    margin-top: 5px;
+}
+form>input{
+    margin-top: -10px;
+    height: 45px;
+    text-align: center;
+    border: 1px gainsboro solid;
+}
+form>input:focus{
+    background-color: rgba(196, 196, 196, 0.397);
+}
+/*-------------------------------------------------------------------------*/
+#reg_butt{
+    margin-top:30px;
+    height: 50px;
+    background-color: rgb(48, 216, 48);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14pt;
+}
+#reg_birth{
+    display: flex;
+    height: 45px;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#bir_year,#bir_day,#bir_mont{
+    flex-grow: 1;
+    width: 15px;
+    
+    text-align: center;
+}
+#div_Sex{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    text-align: center;
+    border: 1px gainsboro solid;
+    background-color: white;
+}
+#tel{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+}
+#tel_fir,#tel_sec,#tel_thi{
+    flex-grow: 1;
+    width: 15px;
+    text-align: center;
+    border: 1px gainsboro solid;
+}
+#reg_butt:hover{
+    background-color: rgb(46, 197, 46);
+}

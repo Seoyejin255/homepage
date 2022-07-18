@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reg_member.css">
+    <script src="reg_member.js"></script>
+    <title>회원가입</title>
+</head>
+<!-- HTML 에서 글자수 제한하여 입력하게 처리하기(아이디,암호,암호재입력, 이름, 이메일)
+    참고 예시 >> <input class="ip" type="text" id="id" minlength="4" maxlength="12" required placeholder="(6자리이상,12자리이하)">
+     JS에서 입력 값들을 거사 처리-->
+<body>
+        <form id="reg_form">
+            <p>아이디</p>
+            <input type="text" placeholder="아이디(4~12자리)" minlength="4" maxlength="12" id="reg_id">
+            <p>비밀번호</p>
+            <input type="password" placeholder="비밀번호(4~12자리)" minlength="4" maxlength="12" id="reg_pw">
+            <p>비밀번호 재입력</p>
+            <input type="password" placeholder="비밀번호를 다시 입력해주세요." id="reg_pwr">
+            <p>이름</p>
+            <input type="text" placeholder="이름(2~20자리)" minlength="2" maxlength="20" id="reg_name">
+            <p>이메일</p>
+            <input type="text" placeholder="이메일(2~20자리)" minlength="2" maxlength="20" id="reg_email">
+            <p>생년월일</p>
+            <div id="reg_birth">
+                <input id="bir_year" type="number" value="2000">
+                <select id="bir_mont" name="month">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                </select>
+                <select id="bir_day" name="day">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+                </select>
+            </div>
+            <p>성별</p>
+            <div id="div_Sex">
+                <input id="sex" type="radio" name="reg_sex" value="남자" checked>남자
+                <input id="sex" type="radio" name="reg_sex" value="여자">여자
+            </div>
+            <p>핸드폰 번호</p>
+            <div id="tel">
+                <input type="text" id="tel_fir" value="010">
+                <input type="text" id="tel_sec" minlength="4" maxlength="4">
+                <input type="text" id="tel_thi" minlength="4" maxlength="4">
+            </div>
+            <input id="reg_butt" type="button" value="회원가입" onclick="register()">
+        </form>
+</body>
+</html>
+<!-- 다음 항목들을 입력받기
+아이디, 암호, 암호재입력, 이름, 이메일, 생년월일,성별, 핸드폰 번호, 회원가입 버튼 -->

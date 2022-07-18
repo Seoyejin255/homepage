@@ -1,0 +1,61 @@
+/*로그인 입력 태그들을 하나의 div 로 묶고 보더, 높이, 폭, 배경, border-radius 등을 넣기
+   input 태그에 placeholder 속성을 이용하여 힌트 삽입.
+   전체화면의 가로,세로 중앙위치에 정렬하기. 박스에 그림자 추가 box-shadow: 5px 5px 5px;*/
+body{
+    height: 1000px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#login_form{
+    border: 1px black solid;
+    margin-left: auto;margin-right: auto;margin-top:50px;
+    height: 300px;width: 500px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px;
+}
+#login_bot{
+    margin-left:auto;margin-right: auto;
+    width: 400px; height: 20px;
+
+}
+#log_id{
+    text-align: center;
+    display: block;
+    width: 250px;height: 35px;
+    margin-top:70px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#log_pw{
+    display: block;text-align: center;
+    width: 250px;height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#log_butt{
+    display: block;
+    border:none;
+    margin-left: auto;
+    margin-right:auto;
+    width: 250px; height: 35px;
+    margin-top:30px; background-color: rgba(42, 156, 42, 0.534);
+}
+#welcome_info{
+    color:green;
+    width:200px; height:20px;
+    text-align: center;
+    margin-left:auto; margin-right: auto;
+}
+
+div>input:focus{
+    background-color: rgba(179, 179, 179, 0.274);
+}
+a{
+    margin-left:36px;
+    text-decoration: none;
+}
+#log_butt:hover{
+    background-color: rgba(28, 107, 28, 0.534);
+}

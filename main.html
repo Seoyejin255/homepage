@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>로그인 폼</title>
+</head>
+<body>
+    <div id="login_form">
+        <input type="text" id="log_id" placeholder="아이디를 입력해주세요.">
+        <input type="password" id="log_pw" placeholder="비밀번호를 입력해주세요.">
+        <input type="button" id="log_butt" onclick="submit()" value="로그인">
+        <p id="welcome_info"></p>
+        <div id="login_bot">
+            <a href="reg_member.html" target="_blank">회원가입 </a>
+            <a href="reg_member.html">아이디 찾기 </a>
+            <a href="reg_member.html">비밀번호 찾기 </a>
+        </div>
+    </div>
+</body>
+</html>
+<!-- 로그인 폼에 회원가입 버튼 추가
+회원가입 버튼 클릭 시 reg_member.html 페이지로 링크 이동 처리-->
